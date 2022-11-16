@@ -1,0 +1,224 @@
+:root {
+    --stdMargin: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(Background.png);
+    background-size: contain;
+}
+
+#landingPage {
+    margin: 0 var(--stdMargin);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+}
+
+nav {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    position: absolute;
+    top: calc(2.5 * var(--stdMargin));
+    left: calc(9 * var(--stdMargin));
+}
+
+nav ul {
+    flex: 1;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #F9F7F7;
+    text-decoration: none;
+}
+
+#heroSection {
+    margin: auto 0;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#heroText {
+    position: absolute;
+    width: 520px;
+    height: 259px;
+    left: 120px;
+    top: 210px;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 77px;
+    text-transform: uppercase;
+    background: linear-gradient(273.04deg, rgba(255, 185, 4, 0.99) 6.16%, #E4D2A3 81.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#heroDescription {
+    position: absolute;
+    width: 470px;
+    height: 142px;
+    left: 120px;
+    top: 469px;
+    font-family: 'Rosario';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 52px;
+    color: #FB945B;
+}
+
+#Information {
+    position: absolute;
+    width: 500px;
+    height: 412px;
+    left: 120px;
+    top: 611px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #BCC0C0;
+}
+
+#imageSection {
+    align-items: center;
+    height: 100vh;
+    grid-column: 7/-1;
+    background-size: contain;
+    background-position: center bottom;
+    position: relative;
+    right: calc(0 * var(--stdMargin));
+    bottom: calc(-4.5 * var(--stdMargin));
+}
+
+#logo {
+    width: 390px;
+    position: absolute;
+    top: var(--stdMargin);
+    left: var(--stdMargin);
+    cursor: pointer;
+}
+
+#Trending {
+    position: absolute;
+    width: 150px;
+    height: 55px;
+    left: 959px;
+    top: 560px;
+    background: #F1DF9E;
+    border-radius: 17px;
+    position: absolute;
+    width: 144px;
+    height: 44px;
+    left: 998px;
+    top: 560px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #136CBE;
+}
+
+.coin-list {
+    position: absolute;
+    right: 6%;
+    bottom: 74px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.coin {
+    display: flex;
+    align-items: center;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 20px;
+    text-align: justify;
+    text-transform: capitalize;
+    color: #D8863B;
+    background-color: #F9F7F7;
+    border: 1px solis white;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+.coin img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.coin h3 {
+    color: #D8863B;
+    margin-bottom: 5px;
+}
+
+.hero p {
+    position: absolute;
+    width: 552px;
+    height: 58px;
+    left: 790px;
+    top: 804px;
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    color: #68C0FF;
+}
+
+form {
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    left: 820px;
+    top: 875px;
+}
+
+form input {
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 400px;
+    font-size: 16px;
+}
+
+form button {
+    outline: none;
+    width: 55px;
+    border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+    background: #4bb7de;
+}
+
+#msg {
+    position: absolute;
+    width: 200px;
+    margin-left: 822px;
+    top: 950px;
+    color: #39CC48;
+    display: block;
+}
